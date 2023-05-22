@@ -1,0 +1,110 @@
+.container0 {
+  background-color: #eee;
+  width: 100%;
+}
+
+.container {
+  background-color: #59a9e4;
+  color: white;
+  height: 50px;
+  padding: 2%;
+}
+.container2 {
+  background-color: white;
+  margin: 5px;
+  width: 700px;
+  height: fit-content;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 5px;
+  position: relative;
+  top: 5px;
+  left: 120px;
+}
+
+.box {
+  background-color: #eee;
+  height: fit-content;
+  width: 300px;
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+  margin: 1%;
+  position: relative;
+  left: 30px;
+}
+
+.Pasuyo {
+  position: relative;
+  top: -10px;
+  margin-left: 50px;
+}
+
+h4 {
+  color: #78a8ae;
+  position: relative;
+  top: 1px;
+}
+h3{
+    position: relative;
+    top: 15px;
+    margin: 20px;
+    
+}
+p {
+  font-size: 2vh;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.icon {
+  float: left;
+  width: 30%;
+  margin: 5%;
+  margin-bottom: 120px;
+}
+
+.logo {
+  width: 40px;
+  float: left;
+}
+
+.pic {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin: 5%;
+  border-radius: 50%;
+  border: 1px solid;
+  
+}
+
+.small {
+  font-size: xx-small;
+  position: absolute;
+  top: 2px;
+}
+.rank {
+  position: relative;
+  font-size: xx-small;
+  top: -20px;
+}
+.description {
+  font-size: 2vh;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.footer1 {
+  background-color: #59a9e4;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
