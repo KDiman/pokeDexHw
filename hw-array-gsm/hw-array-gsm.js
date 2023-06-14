@@ -54,11 +54,15 @@ function getGreatestSum(arr) {
     }
     return maxCol;
   }
-
+  const length = arr.length;
+  // console.log(length)
   const totalNumberofElement = arr.reduce((acc, sum) => acc + sum.length, 0);
   // console.log(totalNumberofElement);
 
-  if (totalNumberofElement !== 9) {
+  if (length !== 3) {
+    console.log("Invalid Input");
+    return "Invalid Input";
+  } else if (totalNumberofElement !== 9) {
     console.log("Invalid Input");
     return "Invalid Input";
   } else if (greatestSumOfRow(arr) >= greatestSumOfCol(arr)) {
@@ -69,6 +73,7 @@ function getGreatestSum(arr) {
     return maxCol;
   }
 }
+
 getGreatestSum(testArray1);
 getGreatestSum(testArray2);
 getGreatestSum(testArray3);
