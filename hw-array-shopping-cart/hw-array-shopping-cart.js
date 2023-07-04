@@ -2,18 +2,11 @@ let usd = 50;
 let serviceFee = 50;
 
 const calculateBill = (cart) => {
-  const totalBill = cart.reduce(
-    (acc, item) => acc + item.price * usd,
-    serviceFee
-  );
-  return "PHP " + totalBill;
+  const totalBill = cart
+    .map((item) => item.price)
+    .reduce((acc, itemAmount) => acc + itemAmount * usd, serviceFee);
+  return `PHP ${totalBill}`;
 };
-
-// const calculateBill = (cart) => {
-//   let totalBill = 0 + serviceFee;
-//   cart.map((item) => (totalBill += item.price * usd));
-//   return "PHP " + totalBill;
-// };
 
 console.log(
   calculateBill([
