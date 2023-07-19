@@ -27,14 +27,14 @@ function App() {
     {
       id: 2,
       name: "password",
-      type: "text",
+      type: "password",
       label: "PASSWORD:",
       errorMessage: passErrorMessage,
     },
     {
       id: 3,
       name: "confirmPassword",
-      type: "text",
+      type: "password",
       label: "CONFIRM PASSWORD:",
       errorMessage: passValErrorMessage,
     },
