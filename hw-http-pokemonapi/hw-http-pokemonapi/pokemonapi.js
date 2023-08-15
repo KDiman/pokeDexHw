@@ -21,10 +21,13 @@ http
 
     const serverURL = url.parse(request.url, true);
 
-    if (serverURL.path === "/pokemons" && request.method === "GET") {
+    if (serverURL.path === "/api/v1/pokemons" && request.method === "GET") {
       response.writeHead(200, headers);
       response.end(JSON.stringify(pokemons));
-    } else if (serverURL.path === "/pokemons" && request.method === "POST") {
+    } else if (
+      serverURL.path === "/api/v1/pokemons" &&
+      request.method === "POST"
+    ) {
       let buffer = "";
 
       request.on("data", (data) => {
@@ -45,8 +48,9 @@ http
         response.end("There was an error in adding user");
       });
     } else if (
-      (serverURL.path.includes("/pokemons") && request.method === "DELETE") ||
-      request.method === "PUT"
+      (serverURL.path.includes("/api/v1/pokemons/") &&
+        request.method === "DELETE") ||
+      (serverURL.path.includes("/api/v1/pokemons/") && request.method === "PUT")
     ) {
       const pathname = serverURL.pathname;
       const splitPath = pathname.split("/");
