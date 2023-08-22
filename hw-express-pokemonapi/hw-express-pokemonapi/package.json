@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security"
   },
   "name": "express-pokemonapi",
   "version": "1.0.0",
   "main": "expressPokemon.js",
   "type": "module",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +15,3 @@
   "license": "ISC",
   "description": "Hw express pokemon api"
 }
-
-
-
