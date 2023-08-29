@@ -11,8 +11,7 @@ const port = 8080;
     const dbConnection = await mongoose.connect('mongodb+srv://Kdiman:991um8avo09w@cluster0.saom6k6.mongodb.net/Pokemons', {
       
     });
-    app.use(express.json());
-    app.use(express.urlencoded({ extended: false }));
+
     
     console.log('Connected to MongoDB:', dbConnection.connections[0].name);
 
